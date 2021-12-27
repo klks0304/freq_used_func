@@ -1,0 +1,29 @@
+import pandas as pd
+import numpy as np
+import tqdm
+
+disease_path = './data/subject/all_icd.csv'
+disease_df = pd.read_csv(disease_path)
+disease_list=disease_df['icd9s']
+
+#read diseases
+disease_list_temp=[]
+for x in disease_list:
+    if len(x)>6:
+        try:
+            int(x[-1])
+            if '+\n' in x:
+                disease_list_temp.append(x.split("+\n")[0])
+                disease_list_temp.append(x.split("+\n")[1])
+            else:
+                disease_list_temp.append(x.split("+")[0].strip())
+                try:
+                    disease_list_temp.append(x.split("+")[1].strip())
+                except:
+                    pass
+        except:
+            pass
+    else:
+        disease_list_temp.append(x)
+
+ 
