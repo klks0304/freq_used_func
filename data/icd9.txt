@@ -1,3 +1,6 @@
+#This file parse data from http://mtrsoftware.com.tw/Page_L/ICD9.htm
+#wanted to create a chinese version similar to search in icd9cms
+#hope this will help :)
 001	霍亂(虎烈拉)
 001.0	霍亂弧菌所致的霍亂
 001.1	異性霍亂弧菌所致霍亂
