@@ -2,6 +2,7 @@
 #this file merges all data from the website by extracting icd9 2001 version but without disease names
 #some disease have multiple icd9 codes (connected with "+") , therefore we apply icd_file data to separate the names.
 #There are 2057 existing code in the file given by website.
+
 icd9s
 008.5
 009.1
