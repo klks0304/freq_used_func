@@ -1,2 +1,2 @@
-# freq_used_func
+# F
 input some functions me personally frequently use
