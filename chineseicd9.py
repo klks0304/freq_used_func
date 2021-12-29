@@ -18,6 +18,3 @@ def openfile(path):
 def search_ch(string):
 	result = openfile("./data/icd9.txt")
 	return print("{}:{}".format(string,result[result["icd9"]==string]["chinese"].iloc[0]))
-
-#if __name__ == "__main__":
-#	print("{}:{}".format(string, search_ch(string)))
